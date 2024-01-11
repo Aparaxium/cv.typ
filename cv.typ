@@ -228,14 +228,14 @@
             block(width: 100%, breakable: isbreakable)[
                 // Line 1: Institution and Location
                 #if project.url != none [
-                    *#link(project.url)[#project.name]* \
+                    *#link(project.url)[#project.name]*
                 ] else [
-                    *#project.name* \
+                    *#project.name*
                 ]
                 // Line 2: Degree and Date Range
-
-                #text(style: "italic")[#project.entities.join(", ")] #h(1fr) #utils.daterange(start, end) \
-
+                #if project.entities != [] or project.startDate != none or project.endDate != none [
+                #text(style: "italic")[#project.entities.join(", ")] #h(1fr) #utils.daterange(start, end)
+                ]
                 // Summary or Description
                 #for hi in project.highlights [
                     - #eval(hi, mode: "markup")

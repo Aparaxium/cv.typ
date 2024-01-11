@@ -233,7 +233,7 @@
                     *#project.name* \
                 ]
                 // Line 2: Degree and Date Range
-                #text(style: "italic")[#project.affiliation]  #h(1fr) #start #sym.dash.en #end \
+                #text(style: "italic")[#project.entities.join(", ")] #h(1fr) #start #sym.dash.en #end \
                 // Summary or Description
                 #for hi in project.highlights [
                     - #eval(hi, mode: "markup")

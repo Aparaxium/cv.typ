@@ -10,13 +10,16 @@ A no-frills curriculum vitae (CV) template for [Typst](https://github.com/typst/
 
 This is based on the [popular template on Reddit](https://web.archive.org/https://old.reddit.com/r/jobs/comments/7y8k6p/im_an_exrecruiter_for_some_of_the_top_companies/) by [u/SheetsGiggles](https://web.archive.org/https://old.reddit.com/user/SheetsGiggles) and the recommendations of the [r/EngineeringResumes wiki](https://web.archive.org/https://old.reddit.com/r/EngineeringResumes/comments/m2cc65/new_and_improved_wiki).
 
+> [!NOTE]  
+> Due to circumstances, this project will be minimally maintained and responses to issues and pull requests will be delayed. If you would like to contribute to this project, I will be happy to review and merge your pull requests when I can. Thank you for your understanding.
+
 ## Demo
 
 See [**example CV**](https://github.com/jskherman/cv.typ/releases/latest/download/example.pdf) and [@jskherman's CV](https://go.jskherman.com/cv):
 
 <div align="center">
-  <img src="https://github.com/jskherman/cv.typ/assets/68434444/1e2f786d-b214-4c72-a5e4-24fba0f1c05c" alt="Sample CV Page 1" style="float: left; width: 49%; height: auto;">
-  <img src="https://github.com/jskherman/cv.typ/assets/68434444/f864e4b8-ee17-4808-b7f2-93643dcdd078" alt="Sample CV Page 2" style="float: left; width: 49%; height: auto;">
+  <img src="https://github.com/jskherman/cv.typ/assets/68434444/e016642e-4b42-43a5-b717-17661283e7fe" alt="Sample CV Page 1" style="float: left; width: 49%; height: auto;">
+  <img src="https://github.com/jskherman/cv.typ/assets/68434444/d97cb2f8-c921-4e1a-8146-213b16b4a5df" alt="Sample CV Page 2" style="float: left; width: 49%; height: auto;">
 </div>
 
 ## Usage

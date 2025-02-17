@@ -1,15 +1,18 @@
-#import "cv.typ": *
+#import "@preview/imprecv:1.0.1": *
 
-#let cvdata = yaml("example.yml")
+#let cvdata = yaml("template.yml")
 
 #let uservars = (
-    headingfont: "Linux Libertine",
-    bodyfont: "Linux Libertine",
-    fontsize: 10pt, // 10pt, 11pt, 12pt
-    linespacing: 6pt,
-    showAddress: true, // true/false show address in contact info
-    showNumber: true,  // true/false show phone number in contact info
-    headingsmallcaps: false
+    headingfont: "Libertinus Serif",
+    bodyfont: "Libertinus Serif",
+    fontsize: 10pt,          // https://typst.app/docs/reference/layout/length
+    linespacing: 6pt,        // length
+    sectionspacing: 0pt,     // length
+    showAddress:  true,      // https://typst.app/docs/reference/foundations/bool
+    showNumber: true,        // bool
+    showTitle: true,         // bool
+    headingsmallcaps: false, // bool
+    sendnote: false,         // bool. set to false to have sideways endnote
 )
 
 // setrules and showrules can be overridden by re-declaring it here
@@ -21,12 +24,14 @@
 
 #let customrules(doc) = {
     // add custom document style rules here
-    set page(
-        paper: "us-letter", // a4, us-letter
+    set page(                 // https://typst.app/docs/reference/layout/page
+        paper: "us-letter",
         numbering: "1 / 1",
-        number-align: center, // left, center, right
-        margin: 1.25cm, // 1.25cm, 1.87cm, 2.5cm
+        number-align: center,
+        margin: 1.25cm,
     )
+
+    // set list(indent: 1em)
 
     doc
 }
@@ -56,4 +61,4 @@
 #cvpublications(cvdata)
 #cvskills(cvdata)
 #cvreferences(cvdata)
-#endnote()
+#endnote(uservars)
